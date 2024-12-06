@@ -77,3 +77,68 @@ address{
     background: transparent;
 }
 /* button */
+/* header */
+/* header */
+/* section hero */
+.hero{
+    padding: 272px 0;
+}
+.hero-title{
+    margin-bottom: 0;
+    color: var(--color-primary-light);
+    font-size: 128px;
+    font-weight: 900;
+    text-align: center;
+}
+.hero-title .accent{
+    color: var(--color-brand-light);
+}
+/* section hero */
+/* section advantage */
+.advantage{
+    background: var(--color-brand-light);
+}
+.advantage-list{
+    color: var(--color-primary-light);
+}
+/* section advantage */
+/* section tradition */
+.tradition{
+    padding-top: 96px;
+}
+.tradition-title{
+    margin-bottom: 42px;
+}
+/* section tradition */
+/* section chef */
+.chef{
+
+}
+.chefs-title{
+    margin-bottom: 80px;
+    text-align: center;
+}
+.chef-title{
+    margin-bottom: 16px;
+}
+/* section chef */
+/* section format */
+.format{
+
+}
+.formats-title{
+    margin-bottom: 80px;
+    text-align: center;
+}
+/* section format */
+/* section contact */
+.contact{
+
+}
+.contacts-title{
+    margin-bottom: 16px;
+    text-align: center;
+}
+/* section contact */
+/* section footer */
+/* section footer */
