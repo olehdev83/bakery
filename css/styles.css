@@ -54,6 +54,7 @@ address{
 /* section */
 /* link */
 .link{
+    text-decoration: none;
     color: var(--color-primary-light);
     line-height: 1.5;
 }
@@ -78,6 +79,29 @@ address{
 }
 /* button */
 /* header */
+.header{
+   background: var(--color-brand-dark); 
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-menu{
+    margin-bottom: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 64px;
+}
+.header-item{
+    
+}
 /* header */
 /* section hero */
 .hero{
