@@ -162,7 +162,7 @@ address{
     max-width: 340px;
 }
 .tradition-img{
-    
+
 }
 /* section tradition */
 /* section chef */
@@ -180,6 +180,19 @@ address{
 /* section format */
 .format{
 
+}
+.formats-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.formats-item{
+    flex-basis: calc((100% - 40px) / 3);
+}
+.format-card{
+    padding: 24px;
+    border: 2px solid #465929;
+    border-radius: 16px;
 }
 .formats-title{
     margin-bottom: 80px;
