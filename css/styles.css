@@ -198,5 +198,8 @@ address{
 }
 /* section contact */
 /* section footer */
+.footer{
+    background: url('/images/bg-footer.png') var(--color-primary-dark);
+}
 /* section footer */
 
