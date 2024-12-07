@@ -104,13 +104,14 @@ address{
     justify-content: center;
     gap: 64px;
 }
-.header-item{
-    
-}
 /* header */
 /* section hero */
 .hero{
     padding: 272px 0;
+    background: url('/images/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .hero-title{
     margin-bottom: 0;
@@ -161,14 +162,8 @@ address{
 .tradition-text.limit{
     max-width: 340px;
 }
-.tradition-img{
-
-}
 /* section tradition */
 /* section chef */
-.chef{
-
-}
 .chefs-title{
     margin-bottom: 80px;
     text-align: center;
@@ -178,9 +173,6 @@ address{
 }
 /* section chef */
 /* section format */
-.format{
-
-}
 .formats-list{
     display: flex;
     flex-wrap: wrap;
@@ -200,9 +192,6 @@ address{
 }
 /* section format */
 /* section contact */
-.contact{
-
-}
 .contacts-title{
     margin-bottom: 16px;
     text-align: center;
