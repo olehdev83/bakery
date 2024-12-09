@@ -1,6 +1,7 @@
 :root{
     --color-primary-dark:  #31261A;
     --color-primary-light: #FAF4EA;
+    --color-secodary-line: #CFCFBC;
     --color-brand-dark:    #465929;
     --color-brand-light:   #819B57;
     
@@ -48,6 +49,9 @@ address{
     font-size: 64px;
     font-weight: 900;
     line-height: 1.3;    
+}
+.section-title.centered{
+    text-align: center;
 }
 .accent{
     color: var(--color-brand-light);
@@ -163,3 +167,79 @@ address{
     border-radius: 400px 400px 0 0;
 }
 /* end tradition-section */
+/* chef-sections */
+/* chef-title */
+.chefs-title{
+    margin: 0 auto 80px;
+    max-width: 520px;
+}
+.chef-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.chefs-title::after, 
+.chefs-title::before{
+    display: block;
+    content: '';
+    width: 352px;
+    border: 2px solid var(--color-secodary-line);
+}
+/* end chef-sections */
+/* format-sections */
+.formats-title{
+    margin-bottom: 80px;
+}
+.format-title{
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+.formats-list{
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.formats-item{
+    flex-basis: calc((100% - 40px) / 3);
+}
+.format-card{
+    padding: 24px;
+    border: 1px solid red;
+    border-radius: 16px;
+    background: linear-gradient(180deg,
+     rgba(49, 38, 26, 0) 55.21%,
+     rgba(49, 38, 26, 0.71) 72.92%, 
+     var( --color-primary-dark) 100%);
+}
+.format-text{
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+}
+/* end format-sections */
+/* footer-sections */
+.footer{
+    padding: 32px 0;
+    background: url('../images/bg-footer.png');
+    background-color: var(--color-primary-dark);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.address-link{
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+.address-copyright{
+    color: #A18268;
+    font-size: 14px;
+}
+/* end footer-sections */
