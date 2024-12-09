@@ -26,9 +26,20 @@ h1, h2, h3, h4, h5, h6, ul, p{
 ul{
     list-style-type: none; 
 }
+.visually-hidden{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 address{
     font-style: normal;
 }
 .section{
     padding: 48px 0;
+}
+.accent{
+    color: var(--color-brand-light);
 }
