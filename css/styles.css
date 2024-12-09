@@ -107,3 +107,20 @@ address{
     color: var(--color-brand-light);
 }
 /* end hero-section */
+/* advantage-section */
+.advantage{
+    padding: 16px 0;
+    background-color: var(--color-brand-light);
+}
+.advantage-list{
+    margin-bottom: 0;
+    color: var(--color-primary-light);
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.advantage-item{
+    font-size: 20px;
+    font-weight: 300;
+}
+/* end advantage-section */
