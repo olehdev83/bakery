@@ -11,6 +11,10 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
+    /*
+    сoficent line-height:
+    line-height: 27 / font-size: 18 = 1.5
+     */
     line-height: 1.5;
     margin: 0;
 }
@@ -39,6 +43,11 @@ address{
 }
 .section{
     padding: 48px 0;
+}
+.section-title{
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;    
 }
 .accent{
     color: var(--color-brand-light);
@@ -124,3 +133,33 @@ address{
     font-weight: 300;
 }
 /* end advantage-section */
+/* tradition-section */
+.tradition{
+    padding-top: 96px;
+}
+.tradition-container{
+    display: flex;
+    gap: 20px;
+}
+.tradition-content{
+    max-width: 710px;
+}
+/* tradition-title */
+.tradition-title{
+    margin-bottom: 42px;
+}
+/* tradition-text */
+.tradition-text .brand{
+    color: var(--color-brand-light);
+}
+/* tradition-text */
+.tradition-text.limit{
+    max-width: 340px;
+}
+.tradition-text .uppercase{
+    text-transform: uppercase;
+}
+.tradition-img{
+    border-radius: 400px 400px 0 0;
+}
+/* end tradition-section */
