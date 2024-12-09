@@ -1,13 +1,16 @@
 :root{
-    --color-primary-dark:  #31261A;
-    --color-primary-light: #FAF4EA;
-    --color-secodary-line: #CFCFBC;
-    --color-brand-dark:    #465929;
-    --color-brand-light:   #819B57;
+    --color-primary-dark:       #31261A;
+    --color-primary-light:      #FAF4EA;
+    --color-secodary-line:      #CFCFBC;
+    --color-secondary-light:    #a18268;
+    --color-brand-dark:         #465929;
+    --color-brand-light:        #819B57;
+  
     
 }
 /* base */
 body{
+    background: var(--color-primary-light);
     color: var(--color-primary-dark);
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -184,6 +187,11 @@ address{
     content: '';
     width: 352px;
     border: 2px solid var(--color-secodary-line);
+}
+.chef-img{
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 var(--color-primary-light),
+                -16px 16px 2px var(--color-secondary-light);
 }
 /* end chef-sections */
 /* format-sections */
