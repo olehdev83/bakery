@@ -43,3 +43,50 @@ address{
 .accent{
     color: var(--color-brand-light);
 }
+/* link */
+.link{
+    color: var(--color-primary-light);
+    line-height: 1.5;
+}
+.link:hover{
+    color: var(--color-brand-light);
+}
+/* button */
+.button{
+    width: 238px;
+    height: 59px;
+    background: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
+    border-radius: 8px;
+    color: var(--color-primary-light);
+    font-weight: 600;
+    cursor: pointer;
+}
+.button:hover{
+    color: var(--color-primary-light);
+    background: transparent;
+}
+/* header */
+.header{
+    background: var(--color-brand-dark);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-menu{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 64px;
+}
+.header-item{
+}
+/* end header */
