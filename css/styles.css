@@ -59,6 +59,20 @@ address{
 .accent{
     color: var(--color-brand-light);
 }
+/* text-limit */
+.text-limit1320{
+    max-width: 320px;
+}
+.text-limit230{
+    max-width: 230px;
+}
+.text-limit219{
+    max-width: 219px;
+}
+.text-limit176{
+    max-width: 176px;
+}
+/* end text-limit */
 /* link */
 .link{
     color: var(--color-primary-light);
@@ -188,10 +202,25 @@ address{
     width: 352px;
     border: 2px solid var(--color-secodary-line);
 }
+.chef-list{
+   display: flex;
+   gap: 30px;
+  
+}
+.chef-item{
+    flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card{
+    display: flex;
+    gap: 30px;
+}
 .chef-img{
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 var(--color-primary-light),
                 -16px 16px 2px var(--color-secondary-light);
+}
+.chef-text{
+
 }
 /* end chef-sections */
 /* format-sections */
