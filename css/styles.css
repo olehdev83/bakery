@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6, ul, p{
 ul{
     list-style-type: none; 
 }
+.rotated {
+    transform: rotate(180deg);
+}
 .visually-hidden{
     position:absolute;
     left:-10000px;
@@ -224,6 +227,12 @@ address{
 }
 /* end chef-sections */
 /* format-sections */
+.format-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
 .formats-title{
     margin-bottom: 80px;
 }
@@ -262,6 +271,7 @@ address{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     fill: var(--color-primary-dark);
