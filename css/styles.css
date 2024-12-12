@@ -35,6 +35,9 @@ ul{
     margin-bottom: 0;
     list-style-type: none; 
 }
+a{
+    display: inline-block;
+}
 .rotated {
     transform: rotate(180deg);
 }
