@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
     margin-top: 0;
 }
 ul{
+    margin-bottom: 0;
     list-style-type: none; 
 }
 .rotated {
@@ -122,7 +123,7 @@ address{
 }
 /* end header */
 /* hero-section */
-.hero{
+.heros{
     background: url('../images/bg-hero.jpg');
     background-position: center top;
     background-repeat: no-repeat;
@@ -141,7 +142,7 @@ address{
 }
 /* end hero-section */
 /* advantage-section */
-.advantage{
+.advantages{
     padding: 16px 0;
     background-color: var(--color-brand-light);
 }
@@ -158,7 +159,7 @@ address{
 }
 /* end advantage-section */
 /* tradition-section */
-.tradition{
+.traditions{
     padding-top: 96px;
 }
 .tradition-container{
@@ -222,9 +223,6 @@ address{
     box-shadow: -16px 16px 0 var(--color-primary-light),
                 -16px 16px 2px var(--color-secondary-light);
 }
-.chef-text{
-
-}
 /* end chef-sections */
 /* format-sections */
 .format-container{
@@ -233,7 +231,7 @@ address{
     justify-content: center;
     gap: 32px;
 }
-.formats-title{
+.format-title{
     margin-bottom: 80px;
 }
 .format-title{
@@ -242,13 +240,13 @@ address{
     font-size: 24px;
     font-weight: 600;
 }
-.formats-list{
+.format-list{
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.formats-item{
+.format-item{
     flex-basis: calc((100% - 40px) / 3);
 }
 .format-card{
@@ -287,6 +285,22 @@ address{
 
 /* endcarousel */
 /* end format-sections */
+/* contact-section */
+.contacts{
+    padding-bottom: 96px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.contacts-title{
+    margin-bottom: 16px;
+}
+.contact-map{
+    flex-shrink: 0;
+}
+/* end contact-section */
 /* footer-sections */
 .footer{
     padding: 32px 0;
@@ -296,19 +310,38 @@ address{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.footer-container{
+    display: flex;
+    gap: 20px;
+}
+.footer-nav, .footer-address{
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+.footer-logo, 
+.footer-menu,
+.address-list{
+    flex-grow: 1;
+}
+.address-social{
+    padding-top: 16px;
+    display: flex;
+    gap: 22px;
+}
 .address-link{
     color: var(--color-primary-light);
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
 }
-.address-link:hover {
+.social-link:hover {
     color: var(--color-brand-light);
 }
-.address-social{
+.social-icon{
     fill: var(--color-primary-light);
 }
-.address-social:hover{
+.social-icon:hover{
     fill: var(--color-brand-light);
 }
 .address-copyright{
