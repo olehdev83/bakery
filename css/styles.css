@@ -201,7 +201,6 @@ address{
 .chefs-title{
     position: relative;
     margin: 0 auto 80px;
-    max-width: 520px;
 }
 .chef-title{
     font-size: 40px;
@@ -210,20 +209,18 @@ address{
 }
 .chefs-title::before,
 .chefs-title::after{
-    display: block;
     content: '';
     width: 352px;
     border: 2px solid var(--color-secodary-line);
+    position: absolute;
+    bottom: 23px;
 }
 .chefs-title::before{
-    position: absolute;
-    left: -360px;
-    bottom: 23px;
+    left: 0;
 }
 .chefs-title::after{
-    position: absolute;
-    right: -360px;
-    bottom: 23px;
+    
+    right: 0;
 }
 .chef-list{
    display: flex;
