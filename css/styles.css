@@ -332,6 +332,28 @@ address{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+.footer::before{
+    background-image: url('../images/decor_footer_bread-left.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+.footer::after{
+    background-image: url('../images/decor_footer_bread-right.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .footer-container{
     display: flex;
