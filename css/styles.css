@@ -423,27 +423,27 @@ address{
 }
 .modal-btn-close{
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     background: transparent;
     border: none;
     position: relative;
     top: 6%;
     left: 90%;
 }
-.modal-icon::before,
-.modal-icon::after{
+.modal-btn-close::before,
+.modal-btn-close::after{
     position: absolute;
-    top: 0;
+    top: 40%;
     right: 0;
     content: '';
     width: 24px;
     height: 2px;
     background: var(--color-primary-dark);
 }
-.modal-icon::before{
+.modal-btn-close::before{
     transform: rotate(45deg);
 }
-.modal-icon::after{
+.modal-btn-close::after{
     transform: rotate(-45deg);
 }
