@@ -393,3 +393,40 @@ address{
     font-size: 14px;
 }
 /* end footer-sections */
+
+/* Modal */
+
+
+/* End Modal */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    position: relative;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.modal-btn-close{
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 40px
+}
