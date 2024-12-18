@@ -22,6 +22,9 @@ body{
     line-height: 1.5;
     margin: 0;
 }
+.transition-all{
+    transition: all 0.3s;
+}
 *,
 *::after,
 *::before{
@@ -90,7 +93,6 @@ address{
     color: var(--color-primary-light);
     line-height: 1.5;
     cursor: pointer;
-    transition: color 0.3s;
 }
 .link:hover{
     color: var(--color-brand-light);
@@ -105,7 +107,6 @@ address{
     color: var(--color-primary-light);
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s;
 }
 .button:hover{
     color: var(--color-primary-light);
@@ -401,7 +402,6 @@ address{
 }
 .social-icon{
     fill: var(--color-primary-light);
-    transition: all 0.3s;
 }
 .social-icon:hover{
     fill: var(--color-brand-light);
