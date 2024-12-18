@@ -409,6 +409,11 @@ address{
     align-items: center;
     justify-content: center;
 }
+.backdrop.is-hidden{
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
 .modal{
     width: 880px;
     height: 880px;
@@ -416,17 +421,29 @@ address{
     border-radius: 32px;
     position: relative;
 }
-.backdrop.is-hidden{
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
-}
 .modal-btn-close{
+    cursor: pointer;
     width: 32px;
     height: 32px;
     background: transparent;
     border: none;
+    position: relative;
+    top: 6%;
+    left: 90%;
+}
+.modal-icon::before,
+.modal-icon::after{
     position: absolute;
-    top: 40px;
-    right: 40px
+    top: 0;
+    right: 0;
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--color-primary-dark);
+}
+.modal-icon::before{
+    transform: rotate(45deg);
+}
+.modal-icon::after{
+    transform: rotate(-45deg);
 }
