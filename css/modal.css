@@ -1,0 +1,52 @@
+/* Modal */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.modal{
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    position: relative;
+}
+.modal-btn-close{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    position: relative;
+    top: 6%;
+    left: 90%;
+}
+.modal-btn-close::before,
+.modal-btn-close::after{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--color-primary-dark);
+}
+.modal-btn-close::before{
+    transform: rotate(45deg);
+}
+.modal-btn-close::after{
+    transform: rotate(-45deg);
+}
+
+/* End Modal */
