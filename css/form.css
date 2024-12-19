@@ -32,10 +32,7 @@
 .form-button:hover{
     color: var( --color-brand-dark);
 }
-.form-text, .form-link{
-    color: var(--color-primary-dark);
-}
-.form-text{
+.form-privacy, .form-privacy-link{
     max-width: 320px;
     font-size: 12px;
     font-weight: 500;
