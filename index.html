@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -157,10 +158,28 @@
         <section class="contacts section" id="contact">
             <div class="container">
                 <div class="contact-container">
-                    <div class="contatc-form">
+                    <div class="contact-form">
                         <h2 class="contacts-title section-title">Приєднуйся до мережі пекарень</h2>
-                        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <!-- forma contact -->
+                        <p class="contacts-text">Заповни форму, щоб ми звʼязались з тобою!</p>
+                        <form action="" name="contact-form" outocomplete="off" novalidate>
+                            <div class="form-fild">
+                                <input class="form-input" type="text" name="user-name" id="user-name"></input>
+                                <label class="form-label" for="user-name">Ім’я</label>
+                            </div>
+                            <div class="form-fild">
+                                <input class="form-input" type="tel" name="user-tel" id="user-tel"></input>
+                                <label class="form-label" for="user-tel">Телефон</label>
+                            </div>
+                            <div class="form-fild">
+                                <input class="form-input" type="email" name="user-email" id="user-email"></input>
+                                <label class="form-label" for="user-tel">Електронна пошта</label>
+                            </div>
+                    
+                            <button class="form-button button" type="submit">Замовити дзвінок</button>
+                            <p class="form-text">Натискаючи на кнопку я погоджуюсь
+                            <a class="form-link" href="#">з політикою конфіденційності</a>
+                            </p>
+                        </form>
                     </div>
                     <iframe class="contact-map" 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1634470361028!2d30.488698375993255!3d50.456680986915956!&#10;
@@ -218,9 +237,30 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
         <div class="modal">
             <button class="modal-btn-close" type="button"></button>
+            <h2 class="modal-title section-title">Замовити дзвінок</h2>
+            <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <form action="" name="contact-form" outocomplete="off" novalidate>
+                <div class="form-fild">
+                    <input class="form-input" type="text" name="user-name" id="user-name"></input>
+                    <label class="form-label" for="user-name">Ім’я</label>
+                </div>
+                <div class="form-fild">
+                    <input class="form-input" type="tel" name="user-tel" id="user-tel"></input>
+                    <label class="form-label" for="user-tel">Телефон</label>
+                </div>
+                <div class="form-fild">
+                    <input class="form-input" type="email" name="user-email" id="user-email"></input>
+                    <label class="form-label" for="user-tel">Електронна пошта</label>
+                </div>
+        
+                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <p class="form-text">Натискаючи на кнопку я погоджуюсь
+                <a class="form-link" href="#">з політикою конфіденційності</a>
+                </p>
+            </form>
         </div>
     </div>
     <script src="js/modal.js"></script>

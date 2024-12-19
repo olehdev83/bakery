@@ -18,13 +18,22 @@
     pointer-events: none;
 }
 .modal{
+    padding: 128px;
     width: 100%;
     max-width: 880px;
     height: 100%;
     max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
+    overflow-y: auto;
     position: relative;
+}
+.modal-title{
+    margin-bottom: 8px;
+}
+.modal-text{
+    margin-bottom: 72px;
+    text-align: center;
 }
 .modal-btn-close{
     cursor: pointer;
@@ -32,7 +41,7 @@
     height: 24px;
     background: transparent;
     border: none;
-    position: relative;
+    position: absolute;
     top: 6%;
     left: 90%;
 }

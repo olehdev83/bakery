@@ -99,13 +99,15 @@ address{
 }
 /* button */
 .button{
+    display: block;
     width: 238px;
     height: 59px;
     background: var(--color-brand-light);
+    color: var(--color-primary-light);
+    font-size: 18px;
+    font-weight: 600;
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
-    color: var(--color-primary-light);
-    font-weight: 600;
     cursor: pointer;
 }
 .button:hover{
@@ -337,6 +339,9 @@ address{
 }
 .contacts-title{
     margin-bottom: 16px;
+}
+.contacts-text{
+    margin-bottom: 42px;
 }
 .contact-map{
     flex-shrink: 0;
