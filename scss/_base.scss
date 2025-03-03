@@ -37,15 +37,5 @@ a{
 address{
     font-style: normal;
 }
-.privacy{
-    margin: 0 auto;
-    max-width: 220px;
-    font-size: 12px;
-    text-align: center;
-    font-weight: 500;
-    &__link{
-        color: var(--color-brand-dark);
-        text-underline-offset: 2px;
-    }
-}
+
 /* end base */
