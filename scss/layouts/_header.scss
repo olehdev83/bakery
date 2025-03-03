@@ -21,4 +21,9 @@
         justify-content: center;
         gap: 64px;
     }
+    &__button{
+        &:hover{
+            color: var(--color-primary-light);
+        }
+    }
 }

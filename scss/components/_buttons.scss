@@ -9,17 +9,11 @@
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
-    &__header{
-        &:hover{
-            color: var(--color-primary-light);
-        }
-    }
     &__call{
-       margin: 24px auto; 
-        &:hover{
-            color: var(--color-brand-dark);
-       }
-    }
+         &:hover{
+             color: var(--color-brand-dark);
+        }
+     }
     &:hover{
         background: transparent;
     }
