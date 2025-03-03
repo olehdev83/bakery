@@ -1,0 +1,29 @@
+
+.contact{
+    padding-bottom: 96px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    &__title{
+        width: 94%;
+        margin-bottom: 16px;
+    }
+    &__text{
+        margin-bottom: 42px;
+    }
+    &__form-field{
+        margin-bottom: 24px;
+    }
+    &__button{
+        display: block;
+        margin: 0 auto 24px;
+        &:hover{
+            color: var(--color-brand-dark);
+        }
+    }
+    &__map{
+        flex-shrink: 0;
+    }
+}

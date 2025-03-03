@@ -1,0 +1,32 @@
+.chefs{
+    &__title{
+        position: relative;
+        margin: 0 auto 80px;
+        &--centered{
+            text-align: center;
+        }
+        &::before, 
+        &::after{
+            content: '';
+            width: 352px;
+            border: 2px solid var(--color-secodary-line);
+            position: absolute;
+            bottom: 23px;
+        }
+        &::before{
+            left: 0;
+        }
+        &::after{
+            right: 0;
+        }
+        
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 30px;
+    }
+    &__item{
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}

@@ -1,0 +1,30 @@
+.chef-card{
+    display: flex;
+	justify-items: center;
+    gap: 30px;
+    &__images{
+        border-radius: 4px 4px 4px 200px;
+        box-shadow:    -16px 16px 0 var(--color-primary-light),
+                       -16px 16px 2px var(--color-secondary-light);
+    }
+	&__title {
+		margin-bottom: 16px;
+		font-size: 40px;
+    	font-weight: 600;
+	}
+	&__text {
+		margin-bottom: 24px;
+		&--limit-176{
+			max-width: 176px;
+		}
+		&--limit-207{
+			max-width: 207px;
+		}
+		&--limit-320{
+			max-width: 320px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}	
+}
