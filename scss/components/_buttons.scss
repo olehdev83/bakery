@@ -1,5 +1,4 @@
 .button{
-    display: block;
     width: 238px;
     height: 59px;
     background: var(--color-brand-light);
@@ -9,12 +8,12 @@
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
-    &__call{
-         &:hover{
-             color: var(--color-brand-dark);
-        }
-     }
     &:hover{
         background: transparent;
+    }
+    &__call {
+        &:hover {      
+            color: var(--color-brand-light);
+        }
     }
 }  

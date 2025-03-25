@@ -1,8 +1,15 @@
-const  modal = document.querySelector('.backdrop');
-const  modalBtnOpen = document.querySelector('.modal__btn-open');
-const  modalBtnClose = document.querySelector('.modal__btn-close');
+const modal = document.getElementById('backdrop');
+const closeButton = document.getElementById('modal-btn-close');
+const openButtons = document.querySelectorAll('.modal-btn-open');
 
-const toggleModal = () => modal.classList.toggle('is-hidden');
+openButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        modal.classList.remove('is-hidden');
+        document.body.classList.add('scroll-block')
+    });
 
-modalBtnOpen.addEventListener('click', toggleModal);
-modalBtnClose.addEventListener('click', toggleModal);
+    closeButton.addEventListener('click', () => {
+        modal.classList.add('is-hidden');
+        document.body.classList.remove('scroll-block')
+    });
+});

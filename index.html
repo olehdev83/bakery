@@ -15,20 +15,36 @@
                         <img class="logo" src="images/logo.svg" alt="logo bakery">
                     </a>
                     <ul class="header__menu">
-                        <li class="header-item"><a class="link transition-all">Наші традиції</a></li>
-                        <li class="header-item"><a class="link transition-all">Шеф-кухарі</a></li>
-                        <li class="header-item"><a class="link transition-all">Формати</a></li>
-                        <li class="header-item"><a class="link transition-all">Контакти</a></li>
+                        <li class="header-item"><a href="#tradition" class="link transition-all">Наші традиції</a></li>
+                        <li class="header-item"><a href="#chef" class="link transition-all">Шеф-кухарі</a></li>
+                        <li class="header-item"><a href="#format" class="link transition-all">Формати</a></li>
+                        <li class="header-item"><a href="#contact" class="link transition-all">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="header__button button modal__btn-open transition-all" type="button">Замовити дзвінок</button>
+                <button class="header__button button modal-btn-open transition-all" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button"></button>
+                    <a href="/"><img src="./images/logo-dark.svg" alt="logo bakery" class="mobile-menu__logo"></a>
+                    <ul class="mobile-menu__list">
+                        <li><a href="#tradition" class="mobile-menu__link">Наші традиції</a></li>
+                        <li><a href="#chef" class="mobile-menu__link">Шеф-кухарі</a></li>
+                        <li><a href="#format" class="mobile-menu__link">Формати</a></li>
+                        <li><a href="#contact" class="mobile-menu__link">Контакти</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="heros" id="hero">
+        <section class="hero" id="hero">
             <div class="container">
-                <h1 class="heros__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+                <h1 class="hero__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+                 <button class="hero__button button modal-btn-open transition-all" type="button">Замовити дзвінок</button>
             </div>
         </section>
         <section class="advantages" id="advantage">
@@ -41,7 +57,7 @@
                 </ul>
             </div>
         </section>
-        <section class="traditions section" id="tradition">
+        <section class="traditions section display-none" id="tradition">
             <div class="container">
                 <div class="traditions__container">
                     <div class="traditions__content">
@@ -61,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="chefs section" id="chef">
+        <section class="chefs section display-none" id="chef">
             <div class="container">
                 <h2 class="section__title chefs__title chefs__title--centered">Наші найкращі<br><span class="text-brand-dark"> шеф - кухарі</span></h2>
                 <ul class="chefs__list">
@@ -98,7 +114,7 @@
                 </ul>
             </div>
         </section>
-        <section class="formats section" id="format">
+        <section class="formats section display-none" id="format">
             <div class="container">
                 <h2 class="section__title formats__title section__title--centered">Формати</h2>
                 <div class="formats__container">
@@ -156,7 +172,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact section" id="contact">
+        <section class="contact section display-none" id="contact">
             <div class="container">
                 <div class="contact__container">
                     <div class="contact__form">
@@ -208,7 +224,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer display-none" id="footer">
         <div class="container">
             <div class="footer-container">
                 <nav class="footer-nav">
@@ -256,9 +272,9 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" id="backdrop" >
         <div class="modal">
-            <button class="modal__btn-close" type="button"></button>
+            <button class="modal__btn-close" id="modal-btn-close" type="button"></button>
             <h2 class="modal__title section__title">Замовити дзвінок</h2>
             <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
             <form action="" name="modal-form" outocomplete="off" novalidate>
@@ -292,7 +308,6 @@
                             placeholder="Електронна пошта" 
                             required>
                 </div>
-            
                 <button class=" modal__button button__call button" type="submit">Замовити дзвінок</button>
                 <p class="privacy">Натискаючи на кнопку я погоджуюсь
                 <a class="privacy__link" href="#">з політикою конфіденційності</a>
@@ -300,6 +315,7 @@
             </form>
         </div>
     </div>
-    <script src="js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobil-menu.js"></script>
 </body>
 </html>
