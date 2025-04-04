@@ -8,7 +8,8 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 272px 0;
+    padding: 160px 0 48px 0;
+
     &__title{
         color:  var(--color-primary-light);
         font-size: 67px;
@@ -16,18 +17,21 @@
         line-height: 1;
         text-align: center;
         margin-bottom: 0;
-
-        @media screen and (min-width: $bp-tablet){
-            font-size: 120px;
-            line-height: 1.5;
-            
-        }
     }
     &__button{
         display: block;
-        margin: 0 auto;
+        margin: 48px auto auto;
+    }
+}
 
-        @media screen and (min-width: $bp-desktop) {
+@media screen and (min-width: $bp-desktop) {
+    .hero{
+        padding: 272px 0;
+
+        &__title{
+            font-size: 120px;
+        }
+        &__button{
             display: none;
         }
     }

@@ -6,8 +6,8 @@ body{
     background: var(--color-primary-light);
     color: var(--color-primary-dark);
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     /*
     сoficent line-height:
     line-height: 27 / font-size: 18 = 1.5
@@ -45,3 +45,10 @@ address{
 }
 
 /* end base */
+
+@media screen and ( min-width: $bp-desktop) {
+    body{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

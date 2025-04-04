@@ -17,22 +17,9 @@
     }
     &__menu{
         display: none;
-        @media screen and (min-width: $bp-desktop) {
-            display: flex;
-            flex-grow: 1;
-            justify-content: center;
-            gap: 64px;
-        }
     }
     &__button{
         display: none;
-
-        @media screen and (min-width: $bp-desktop) {
-            display: block;
-            &:hover {
-                color: var(--color-primary-light);
-            }
-        }
     }
     &__burger{
         padding: 0;
@@ -41,8 +28,31 @@
         border: none;
         background: transparent;
         fill: var(--color-primary-light);
-        @media screen and (min-width: $bp-desktop){
+    }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .header{
+        padding-top: 32px;
+        &__menu {
+            display: flex;
+            flex-grow: 1;
+            gap: 64px;
+            justify-content: center;
+        }
+        &__burger {
             display: none;
         }
     }
- }
+}
+
+@media screen and (min-width: $bp-desktop){
+    .header {
+        &__button{
+            display: block;
+        }
+        &__burger{
+            display: none;
+        }
+    }
+}
