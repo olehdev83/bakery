@@ -1,7 +1,7 @@
 .chef-card{
     display: flex;
 	justify-items: center;
-    gap: 30px;
+    gap: 16px;
     &__images{
         width: 140px;
 		border-radius: 2px 2px 2px 116px;
@@ -24,6 +24,7 @@
 
 @media screen and (min-width: $bp-desktop){
 	.chef-card{
+		gap: 30px;
 		&__images {
 			width: 240px;
 			border-radius: 4px 4px 4px 200px;
