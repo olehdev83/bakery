@@ -3,28 +3,41 @@
 	justify-items: center;
     gap: 30px;
     &__images{
-        border-radius: 4px 4px 4px 200px;
-        box-shadow:    -16px 16px 0 var(--color-primary-light),
-                       -16px 16px 2px var(--color-secondary-light);
+        width: 140px;
+		border-radius: 2px 2px 2px 116px;
+		box-shadow: -8px 8px 0 var(--color-primary-light),
+					-8px 8px 2px var(--color-secondary-light);
     }
 	&__title {
-		margin-bottom: 16px;
-		font-size: 40px;
+		margin-bottom: 8px;
+		font-size: 24px;
     	font-weight: 600;
 	}
 	&__text {
-		margin-bottom: 24px;
-		&--limit-176{
-			max-width: 176px;
-		}
-		&--limit-207{
-			max-width: 207px;
-		}
-		&--limit-320{
-			max-width: 320px;
-		}
+		font-size: 14px;
+
 		&:last-child{
 			margin-bottom: 0;
 		}
 	}	
+}
+
+@media screen and (min-width: $bp-desktop){
+	.chef-card{
+		&__images {
+			width: 240px;
+			border-radius: 4px 4px 4px 200px;
+			box-shadow: -16px 16px 0 var(--color-primary-light),
+						-16px 16px 2px var(--color-secondary-light);
+		}
+		&__title{
+			margin-bottom: 16px;
+			font-size: 40px;
+		}
+		&__text{
+			margin-bottom: 24px;
+			
+		}
+	}
+	
 }

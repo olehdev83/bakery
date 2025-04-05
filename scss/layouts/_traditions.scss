@@ -1,14 +1,6 @@
 .traditions{
-    &__container{
-        display: flex;
-        gap: 20px;
-    }
-    &__content{
-        max-width: 710px;
-    }
-    &__title{
-        margin-bottom: 42px;
-    }
+    padding-top: 40px;
+    
     &__images{
         display: none;
     }
@@ -17,6 +9,17 @@
 @media screen and (min-width: $bp-tablet){
     .traditions{
         padding-top: 96px;
+        
+        &__container{
+            display: flex;
+            gap: 20px;
+        }
+        &__content {
+            max-width: 710px;
+        }
+        &__title {
+            margin-bottom: 42px;
+        }
         &__text {
             max-width: 600px;
             &--limit {
