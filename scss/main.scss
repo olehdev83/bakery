@@ -4,6 +4,14 @@
 @import './utilites/texts';
 @import './utilites/utilites';
 
+@import './components/links';
+@import './components/buttons';
+@import './components/carousel-button';
+@import './components/input';
+@import './components/chef-card';
+@import './components/format-card';
+@import './components/pagination';
+
 @import './layouts/section';
 @import './layouts/header';
 @import './layouts/hero';
@@ -16,11 +24,3 @@
 @import './layouts/mobile-menu';
 @import './layouts/modal';
 @import './layouts/privecy';
-
-@import './components/links';
-@import './components/buttons';
-@import './components/input';
-@import './components/chef-card';
-@import './components/format-card';
-@import './components/carousel-button';
-@import './components/pagination';
