@@ -1,13 +1,13 @@
 
 .contact{
-    padding-bottom: 96px;
+    padding: 40px 0 0 0;
     &__container{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         gap: 32px;
     }
     &__title{
-        width: 94%;
         margin-bottom: 16px;
     }
     &__text{
@@ -20,7 +20,47 @@
         margin: 0 auto 16px;
     }
     &__map{
+        margin: 0 -24px;
+        min-height: 176px;
+        border-radius: 16px;
         flex-shrink: 0;
         border: none;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .contact {
+        padding-bottom: 96px;
+    
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 32px;
+        }
+    
+        &__title {
+            margin-bottom: 16px;
+        }
+    
+        &__text {
+            margin-bottom: 42px;
+        }
+    
+        &__form-field {
+            margin-bottom: 24px;
+        }
+    
+        &__button {
+            margin: 0 auto 16px;
+        }
+    
+        &__map {
+            margin: auto;
+            width: 600px; 
+            height: 595px;
+            flex-shrink: 0;
+            border: none;
+        }
     }
 }
