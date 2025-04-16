@@ -6,62 +6,79 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-.footer::before,
-.footer::after{
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    bottom: 0;
-}
 
-.footer::before{
-    background-image: url('../images/decor_footer_bread-left.png');
-    width: 180px;
-    height: 120px;
-}
-.footer::after{
-    background-image: url('../images/decor_footer_bread-right.png');
-    width: 380px;
-    height: 190px;
-    right: 0;
-}
-.footer-container{
-    display: flex;
-    gap: 20px;
-}
-.footer-nav, .footer-address{
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
-.footer-logo, 
-.footer-menu,
-.address-list{
-    flex-grow: 1;
-}
-.address-social{
-    padding-top: 16px;
-    display: flex;
-    gap: 22px;
-}
-.address-link{
-    color: var(--color-primary-light);
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-}
-.social-link:hover {
-    color: var(--color-brand-light);
-}
-.social-icon{
-    fill: var(--color-primary-light);
-}
-.social-icon:hover{
-    fill: var(--color-brand-light);
-}
-.address-copyright{
-    color: #A18268;
-    font-size: 14px;
+    &::before, 
+    &::after{
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        bottom: 0;
+    }
+
+    &::before{
+        background-image: url('../images/decor_footer_bread-left.png');
+        width: 180px;
+        height: 120px;
+    }
+
+    &::after{
+        background-image: url('../images/decor_footer_bread-right.png');
+        width: 380px;
+        height: 190px;
+        right: 0;
+    }
+
+    &__container{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__nav,
+    &__address{
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+    }
+
+    &__logo,
+    &__menu,
+    &__address-list{
+        flex-grow: 1;
+    }
+
+    &__address-list{
+        max-width: 277px;
+    }
+
+    &__menu a,
+    &__address-link{
+        padding-bottom: 16px;
+    }
+
+    &__address-link{
+        color: var(--color-primary-light);
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        &:hover{
+            color: var(--color-brand-light);
+        }
+    }
+    &__social{
+        display: flex;
+        gap: 22px;
+    }
+    
+    &__social-icon{
+        fill: var(--color-primary-light);
+        &:hover{
+            fill: var(--color-brand-light);
+        }
+    }
+
+    &__address-copyright{
+        color: #A18268;
+        font-size: 14px;
+    }
 }
