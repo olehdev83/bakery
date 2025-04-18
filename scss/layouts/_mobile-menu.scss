@@ -7,33 +7,17 @@
     background-color: var(--color-primary-light);
     transform: translateX(-100%);
     transition: transform 0.3s;
+    &::after{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: '';
+        width: 180px;
+        height: 240px;
+        background-image: url('/images/menu_mobile-icon.png');
+    }
     &__logo{
         margin: 16px 0 32px 24px;
-    }
-    &__btn-close{
-        background: transparent;
-        border: none;
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        top: 16px;
-        right: 24px;
-        &::before,
-        &::after {
-            position: absolute;
-            top: 40%;
-            right: 0;
-            content: '';
-            width: 24px;
-            height: 2px;
-            background: var(--color-primary-dark);
-        }
-        &::before {
-            transform: rotate(45deg);
-        }
-        &::after {
-            transform: rotate(-45deg);
-        }
     }
     &.is-open{
         transform: translateX(0);
@@ -43,5 +27,39 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+    &__link{
+        color: var(--color-primary-dark);
+        &:hover{
+            color: var(--color-brand-dark);
+        }
+    }
+    &__btn-close {
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+    
+        &::before,
+        &::after {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            content: '';
+            width: 24px;
+            height: 2px;
+             background: var(--color-primary-dark);
+        }
+    
+        &::before {
+            transform: rotate(45deg);
+        }
+    
+        &::after {
+            transform: rotate(-45deg);
+        }
     }
 }
